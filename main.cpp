@@ -1,7 +1,11 @@
-#include "calculator.h"
-#include <iostream>
+#include "mainwindow.h"
 
-int main() {
-    bool success = RunCalculatorCycle();
-    return success ? 0 : 1;
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }
